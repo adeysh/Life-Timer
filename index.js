@@ -5,7 +5,7 @@ let showAge = document.getElementById("showAge");
 let showAgeContainer = document.getElementById("container");
 
 cog.addEventListener("click", () => {
-    if (dateInputDiv.style.display === "none") {
+    if (dateInputDiv.style.display === "none" || dateInputDiv.style.display === "") {
         dateInputDiv.style.display = "block";
         dateInputDiv.value = "";
         submitBtn.style.display = "none";
